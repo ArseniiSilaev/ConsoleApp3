@@ -11,11 +11,10 @@ namespace ConsoleApp3
         static void Main(string[] args)
         {
             Console.Write("Введите количество золота: ");
-            int N = Convert.ToInt32(Console.ReadLine());
+            int goldCount = Convert.ToInt32(Console.ReadLine());
             Console.Write("Сколько кристаллов по цене 15 Вы хотите купить?: ");
-            int Crystal = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("У вас осталось " + (N - 15 * Crystal) + " золота и " + Crystal + " кристаллов");
-
+            int crystalCount = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("У вас осталось " + (goldCount - 15 * crystalCount) + " золота и " + crystalCount + " кристаллов");
         }
     }
 }
